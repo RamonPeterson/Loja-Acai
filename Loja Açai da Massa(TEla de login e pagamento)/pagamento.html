@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento</title>
+  <link rel="stylesheet" href="assets/styles/stylepagamento.css">
+  <link rel="stylesheet" href="js/cart.js">
+
+  <link rel="icon" href="assets/images/logoo.jpg" type="image/png">
+
+</head>
+<body>
+  <div class="mainscreen">
+      <div class="card">
+        <div class="leftside">
+          <img
+            src="https://img.freepik.com/fotos-gratis/deliciosa-xicara-de-sobremesa-brasileira-com-morangos_23-2149871603.jpg?size=626&ext=jpg&ga=GA1.1.1924339461.1713924249&semt=ais_user_b"
+            class="product"
+            alt="Shoes"
+          />
+        </div>
+        <div class="rightside">
+          <form action="">
+            <h1>Confira</h1>
+            <h2>Informação de pagamento</h2>
+            <p>Nome do Titular</p>
+            <input type="text" class="inputbox" name="name" required />
+            <p>Número do cartão</p>
+            <input type="number" class="inputbox" name="card_number" id="card_number" required />
+
+            <p>Tipo do cartão</p>
+            <select class="inputbox" name="card_type" id="card_type" required>
+              <option value="">--Selecione seu cartão --</option>
+              <option value="Visa">Visa</option>
+              <option value="MasterCard">MasterCard</option>
+            </select>
+<div class="expcvv">
+
+            <p class="expcvv_text">Validade</p>
+            <input type="date" class="inputbox" name="exp_date" id="exp_date" required />
+
+            <p class="expcvv_text2">CVV</p>
+            <input type="password" class="inputbox" name="cvv" id="cvv" required />
+        </div>
+            <p></p>
+        <div class="carts">
+            <div class="total">
+              <span id="cartTotal">R$ 00,0</span>
+            </div>
+        </div>
+            <button type="submit" class="button">Pagar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

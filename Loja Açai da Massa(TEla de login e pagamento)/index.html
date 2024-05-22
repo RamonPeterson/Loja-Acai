@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Açaí da Massa</title>
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link rel="icon" href="assets/images/logoo.jpg" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-gwJt2al4kNSR67Cj5y4Tl6KqF5n/+vUkLwlGBXgAe2vklOtMteY9YcVcKnyGTw+JJX4/zd3PfOzGk6C9GoiwVg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="https://www.loopnerd.com.br/artigos/css3/botao-css-com-icones-de-redes-sociais-efeito-vertical/img/favicon.png" type="image/ico">
+</head>
+<body>
+
+    
+<div class="background">
+<header id="inicio" class="links">
+    <div class="logo">
+        <img src="./assets/images/logoo.jpg" alt="logo">
+    </div> <!--Logo-->
+
+    <ul class="Links"> <!--Aqui é a parte do nosso menu-->
+        <li><a href="index.html">Início</a></li>
+        <li><a href="login.html" target="_blank">Login</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#footer">Contatos</a></li>
+    </ul>
+
+    <div class="C-icone">
+        <span class="Ícone"><ion-icon name="search-outline"></ion-icon></span>
+        <span class="Ícone" onclick="toggleCart()"><ion-icon name="cart-outline"></ion-icon></span>
+    </div> <!--C-icon é para adicionar os ícones de lupa e carrinho-->
+</header>
+<br><br><br><br>
+<div class="C-title"> <!--Texto que estão contidos-->
+    <div class="title"> <!--Colocar o texto no site-->
+        <h1>"Açaí pela tarde </h1>
+        <h1>É Massa!!" </h1>
+
+    </div> <!--Tittle-->
+
+    <p>Às vezes a gente só precisa de um convite para ser feliz:</p>
+    <p>Vamos tomar um açaí?</p>
+    <a href="#menu">
+        <button>Compre agora</button>
+      </a>
+      
+</div> <!--Aqui é para colocar um título no site-->
+
+    </div> <!--Background-->
+
+    <section class="section-1" id="sobre"> <!--Criar seção para contar sobre nós-->
+        <h1><span>Sobre</span> Nós</h1>
+        <div class="Sobre-nós"> <!--Criar um campo para sobre nós-->
+
+            <div class="Sobre-img"> <!--Colocar a imagem em sobre nós-->
+                <img src="https://live.staticflickr.com/4097/34825494973_73b6d217dc_z.jpg" alt="Sobre">
+
+            </div>
+
+            <div class="Sobre-nós-title"> <!--Colocar o título dentro do sobre nós-->
+                <h2> O que faz nosso açaí especial? </h2>
+                <p>Imagine um lugar onde a natureza se encontra com o prazer de uma refeição saudável e deliciosa. O Açaí da Massa é mais do que um empreendimento, é uma celebração da vitalidade e do bem-estar, embalada no sabor exótico e irresistível do açaí.
+                    <br>
+                     Nossa missão é trazer para você a essência pura da Amazônia, repleta de antioxidantes, vitaminas e minerais, servida em cada tigela ou copo de açaí.</p>
+                     <a href="#menu">
+                        <button>Compre agora</button>
+                      </a>
+                      
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <br >
+    <section class="section-2" id="menu" >
+        <h1 > Nosso <span> Menu</span></h1>
+        <div class="Container-card-1">
+            <div class="card-img" onclick="addToCart('Açaí Tradicional', 9.99, 'img.freepik.com/fotos-premium/comida-brasileira-de-acai-com-fundo-branco_741910-52860.jpg?w=740')">
+                <img src="https://img.freepik.com/fotos-premium/comida-brasileira-de-acai-com-fundo-branco_741910-52860.jpg?w=740" alt="menu-img-1" width="200px" height="200px">
+                <h3>Açaí Tradicional</h3>
+                <p><span>R$15,00</span> R$9,99</p>
+                <button>Add ao Carrinho</button>
+            </div>
+
+            <div class="card-img"  onclick="addToCart('Açaí com Nutela', 14.99, 'i.pinimg.com/originals/93/40/09/9340098b79b3bab7ab886f8f2bcc69cf.jpg')">
+                <img src="https://i.pinimg.com/originals/93/40/09/9340098b79b3bab7ab886f8f2bcc69cf.jpg" alt="menu-img-2" width="200px" height="200px">
+                <h3>Açaí Nutela</h3>
+                <p> <span>R$20,00</span> R$14,99 </p> 
+                <button>Add ao Carrinho</button>
+            </div>
+            
+            <div class="card-img"  onclick="addToCart('Açaí Fitness', 25.99, 'i.pinimg.com/736x/bf/09/40/bf09402e8d1c713256637d1773fdd897.jpg')">
+                <img src="https://i.pinimg.com/736x/bf/09/40/bf09402e8d1c713256637d1773fdd897.jpg" alt="menu-img-3" width="200px" height="200px">
+                <h3>Açaí Fitness</h3>
+                <p><span>R$30,00</span> R$24,99</p>
+                <button>Add ao Carrinho</button>
+            </div>
+        </div>
+
+
+        <div id="Container-card-2" class="Container-card-1">
+                <div class="card-img"  onclick="addToCart('Açaí com Banana', 14.99, 'geladoacaiesorvetelevebagoocombr.levebagoo.com.br/_core/_uploads/113/2022/10/1726201022df1ccg04gf.png')">
+                    <img src="https://geladoacaiesorvetelevebagoocombr.levebagoo.com.br/_core/_uploads/113/2022/10/1726201022df1ccg04gf.png" alt="menu-img-4" width="200px" height="200px">
+                    <h3>Açaí c/ Banana</h3>
+                    <p><span>R$20,00</span> R$14,99</p>
+                    <button>Add ao Carrinho</button>
+                </div>
+
+                <div class="card-img"  onclick="addToCart('Açaí com Morango', 19.99, 'i.pinimg.com/736x/40/83/e6/4083e60578d89ba8ca39f6ea1259df12.jpg')">
+                    <img src="https://i.pinimg.com/736x/40/83/e6/4083e60578d89ba8ca39f6ea1259df12.jpg" alt="menu-img-5" width="200px" height="200px">
+                    <h3>Açaí c/ Morango</h3>
+                    <p><span>R$25,00</span> R$19,99</p> 
+                    <button>Add ao Carrinho</button>
+                </div>
+
+                    <div class="card-img"  onclick="addToCart('Açaí Nutela c/Oreo', 29.99, 's2-casaejardim.glbimg.com/su03ntoBrWmPJNK_Ei6tgomjbZ4=/0x0:1400x1027/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_a0b7e59562ef42049f4e191fe476fe7d/internal_photos/bs/2022/W/6/l7thART0qmpulV2YLqKg/receita-acai-biscoito-bolacha-oreo-chocolate-ovomaltine-acai-purissimo.png')">
+                        <img src="https://s2-casaejardim.glbimg.com/su03ntoBrWmPJNK_Ei6tgomjbZ4=/0x0:1400x1027/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_a0b7e59562ef42049f4e191fe476fe7d/internal_photos/bs/2022/W/6/l7thART0qmpulV2YLqKg/receita-acai-biscoito-bolacha-oreo-chocolate-ovomaltine-acai-purissimo.png" alt="menu-img-6" width="200px" height="200px">
+                        <h3>Nutela c/Oreo</h3>
+                        <p><span>R$35,00</span> R$29,99</p> 
+                        <button>Add ao Carrinho</button>
+                    </div>
+
+
+        </div>
+
+    </section>
+
+    <div class="cart close">
+        <p class="title">Carrinho</p>
+
+        <div class="total">
+            <span>R$ 00,0</span>
+        </div>
+            <div class="close-button" onclick="toggleCart()">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+        <div class="cart-lines">
+        </div>
+        <br>
+        <div>
+
+            <center>
+            <a class="acai-button" href="pagamento.html" target="_blank">Pagar Agora</a>
+            </center>
+        </div>
+
+        
+        
+    </div>
+    <br><br>
+
+        <!--Inicia Footer-->
+        <h1 > Contato</h1>
+
+        <div class="footer-livro" id="footer">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    
+        <footer class="main_footer container">
+            
+            <div class="content">
+                
+                <div class="colfooter">
+                    
+                    <h4 class="titleFooter">Links</h4>
+                    <br>
+                    <ul>
+                    
+                      <li><a href="index.html" title="#">Página Inícial</a></li>
+                      <li><a href="#sobre" title="#sobre">Sobre</a></li>
+                      <li><a href="#menu" title="">Produtos</a></li>
+                      <li><a href="#footer" title="Fale Conosco">Fale Conosco</a></li>
+                    
+                    </ul>
+                
+                </div><!--Col Footer 1-->        
+                
+                <div class="colfooter">
+                   
+                   <h4 class="titleFooter">Contato</h4>
+                   <br><br>
+                   <p><i class="icon icon-mail"></i> açaidamassa.com.br</p>
+                   <p><i class="icon icon-phone"></i> (71) 99122-3239</p>
+                   <p><i class="icon icon-whatsapp"></i> (71) 99122-3239</p>
+                
+                </div><!--Col Footer 2-->
+                
+                
+                   
+                    <h4 class="titleFooter">Redes Sociais</h4>
+                      
+                        <br><br>
+                        <ul class="box-social back">
+        
+                            <li>
+                                <a href="#">
+                                    <div class="icone-box-facebook">
+                                        <i class="fa fa-facebook flip-cor" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">
+                                    <div class="icone-box-instagram">
+                                        <i class="fa fa-instagram flip-cor" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">
+                                    <div class="icone-box-twitter">
+                                        <i class="fa fa-twitter flip-cor" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">
+                                    <div class="icone-box-youtube cor-horizontal">
+                                        <i class="fa fa-youtube flip-cor" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                            </li>
+                    
+                        </ul>
+                
+                    </div>                   
+      
+                </form>
+                
+                </div><!--Col Footer 3-->
+                
+                <div class="clear"></div>
+            
+            </div><!--Contant-->
+            
+            <div class="main_footer_copy">
+                
+                <p class="m-b-footer"> Açaidamassa - 2024, todos os direitos reservados.</p> 
+                <p class="by"><i class="icon icon-heart-3"></i> Desenvolvido por: INF03-grupo </a></p>
+            
+            </div>
+    
+        </footer>
+    
+        <!--Fecha Footer-->
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="./js/cart.js"></script>
+</body>
+</html>
