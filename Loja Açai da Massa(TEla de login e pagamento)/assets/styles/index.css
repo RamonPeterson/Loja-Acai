@@ -626,6 +626,24 @@ hr{
 
 
 
+.search-container {
+    display: flex;
+    align-items: center;
+  }
+  #search-input {
+    display: none; /* Inicialmente oculto */
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .icon {
+    cursor: pointer;
+    padding: 5px;
+  }
+
+
+
+
 
 
 
