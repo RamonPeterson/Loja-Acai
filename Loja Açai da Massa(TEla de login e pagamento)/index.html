@@ -28,7 +28,7 @@
     </ul>
 
     <div class="C-icone">
-        <span class="Ícone"><ion-icon name="search-outline"></ion-icon></span>
+
         <span class="Ícone" onclick="toggleCart()"><ion-icon name="cart-outline"></ion-icon></span>
     </div> <!--C-icon é para adicionar os ícones de lupa e carrinho-->
 </header>
@@ -94,7 +94,7 @@
                 <button>Add ao Carrinho</button>
             </div>
             
-            <div class="card-img"  onclick="addToCart('Açaí Fitness', 25.99, 'i.pinimg.com/736x/bf/09/40/bf09402e8d1c713256637d1773fdd897.jpg')">
+            <div class="card-img"  onclick="addToCart('Açaí Fitness', 24.99, 'i.pinimg.com/736x/bf/09/40/bf09402e8d1c713256637d1773fdd897.jpg')">
                 <img src="https://i.pinimg.com/736x/bf/09/40/bf09402e8d1c713256637d1773fdd897.jpg" alt="menu-img-3" width="200px" height="200px">
                 <h3>Açaí Fitness</h3>
                 <p><span>R$30,00</span> R$24,99</p>
@@ -118,12 +118,12 @@
                     <button>Add ao Carrinho</button>
                 </div>
 
-                    <div class="card-img"  onclick="addToCart('Açaí Nutela c/Oreo', 29.99, 's2-casaejardim.glbimg.com/su03ntoBrWmPJNK_Ei6tgomjbZ4=/0x0:1400x1027/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_a0b7e59562ef42049f4e191fe476fe7d/internal_photos/bs/2022/W/6/l7thART0qmpulV2YLqKg/receita-acai-biscoito-bolacha-oreo-chocolate-ovomaltine-acai-purissimo.png')">
-                        <img src="https://s2-casaejardim.glbimg.com/su03ntoBrWmPJNK_Ei6tgomjbZ4=/0x0:1400x1027/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_a0b7e59562ef42049f4e191fe476fe7d/internal_photos/bs/2022/W/6/l7thART0qmpulV2YLqKg/receita-acai-biscoito-bolacha-oreo-chocolate-ovomaltine-acai-purissimo.png" alt="menu-img-6" width="200px" height="200px">
-                        <h3>Nutela c/Oreo</h3>
-                        <p><span>R$35,00</span> R$29,99</p> 
-                        <button>Add ao Carrinho</button>
-                    </div>
+                <div class="card-img"  onclick="addToCart('Açaí Nutela c/Oreo', 29.99, 's2-casaejardim.glbimg.com/su03ntoBrWmPJNK_Ei6tgomjbZ4=/0x0:1400x1027/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_a0b7e59562ef42049f4e191fe476fe7d/internal_photos/bs/2022/W/6/l7thART0qmpulV2YLqKg/receita-acai-biscoito-bolacha-oreo-chocolate-ovomaltine-acai-purissimo.png')">
+                    <img src="https://s2-casaejardim.glbimg.com/su03ntoBrWmPJNK_Ei6tgomjbZ4=/0x0:1400x1027/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_a0b7e59562ef42049f4e191fe476fe7d/internal_photos/bs/2022/W/6/l7thART0qmpulV2YLqKg/receita-acai-biscoito-bolacha-oreo-chocolate-ovomaltine-acai-purissimo.png" alt="menu-img-6" width="200px" height="200px">
+                    <h3>Nutela c/Oreo</h3>
+                    <p><span>R$35,00</span> R$29,99</p> 
+                    <button>Add ao Carrinho</button>
+                </div>
 
 
         </div>
@@ -134,7 +134,7 @@
         <p class="title">Carrinho</p>
 
         <div class="total">
-            <span>R$ 00,0</span>
+            <span id="total">R$ 00,00</span>
         </div>
             <div class="close-button" onclick="toggleCart()">
                 <ion-icon name="close-outline"></ion-icon>
@@ -144,9 +144,9 @@
         <br>
         <div>
 
-            <center>
-            <a class="acai-button" href="pagamento.html" target="_blank">Pagar Agora</a>
-            </center>
+        <center>
+           <button class="acai-button"  id="finalize-purchase">Finalizar Compra</button>
+        </center>
         </div>
 
         
@@ -258,9 +258,6 @@
 
 
 
-
-
-
    
 
 
@@ -277,7 +274,9 @@
 
 
 
-
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script defer src="path/to/your/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="./js/cart.js"></script>

@@ -46,7 +46,7 @@
             <p></p>
         <div class="carts">
             <div class="total">
-              <span id="cartTotal">R$ 00,0</span>
+              <span id="total">R$ 00,00</span>
             </div>
         </div>
             <button type="submit" class="button">Pagar</button>
@@ -57,8 +57,16 @@
   
 
 
-
-
+    <script>
+      window.onload = function() {
+        // Obtém o parâmetro 'total' da URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const total = urlParams.get('total');
+  
+        // Exibe o valor total na página
+        document.getElementById('total').textContent = new Intl.NumberFormat('pt-BR', { style: "currency", currency: "BRL" }).format(total);
+      };
+    </script>
   
 
 
